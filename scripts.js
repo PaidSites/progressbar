@@ -1,8 +1,8 @@
 var ProgressBar = function () {
   this.length  = this.getParam('length');
-  this.percent = 10;
   this.before  = this.beforeCopy();
   this.after   = this.afterCopy();
+  this.percent = 10;
 
   this.animate();
 };
@@ -19,7 +19,6 @@ ProgressBar.prototype.animate = function () {
 
     if (self.percent > 100) {
       progress.css('border-radius', '20px');
-      progress.css('background', '#999');
 
       copy.html(self.after);
 
