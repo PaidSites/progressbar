@@ -7,7 +7,7 @@
 .copy {
   text-align: center;
   font-family: Helvetica, Arial, sans-serif;
-  font-size: 18px;
+  font-size: 22px;
 }
 
 .meter {
@@ -111,6 +111,13 @@
 .animate > span:after {
   display: none;
 }
+
+.meter > span.no-meter-bg:after {
+	BACKGROUND-IMAGE:none;
+	animation:none;	
+}
+
+
 
 @-webkit-keyframes move {
     0% {
