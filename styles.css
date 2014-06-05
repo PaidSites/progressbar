@@ -7,7 +7,7 @@
 .copy {
   text-align: center;
   font-family: Helvetica, Arial, sans-serif;
-  font-size: 18px;
+  font-size: 22px;
 }
 
 .meter {
@@ -75,6 +75,18 @@
   content: "";
   position: absolute;
   top: 0; left: 0; bottom: 0; right: 0;
+  
+	 background-image: 
+    -ms-linear-gradient(
+      -45deg, 
+        rgba(255, 255, 255, .2) 25%, 
+        transparent 25%, 
+        transparent 50%, 
+        rgba(255, 255, 255, .2) 50%, 
+        rgba(255, 255, 255, .2) 75%, 
+        transparent 75%, 
+        transparent
+     );
   background-image: 
      -webkit-gradient(linear, 0 0, 100% 100%, 
         color-stop(.25, rgba(255, 255, 255, .2)), 
@@ -119,6 +131,13 @@
 .animate > span:after {
   display: none;
 }
+
+.meter > span.no-meter-bg:after {
+	BACKGROUND-IMAGE:none;
+	animation:none;	
+}
+
+
 
 @-webkit-keyframes move {
     0% {

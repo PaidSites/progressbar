@@ -19,6 +19,7 @@ ProgressBar.prototype.animate = function () {
 
     if (self.percent > 100) {
       progress.css('border-radius', '20px');
+	  progress.addClass('no-meter-bg');
 
       copy.html(self.after);
 
