@@ -136,9 +136,9 @@
   display: none;
 }
 
-.meter > span.no-meter-bg:after {
+.meter > span.no-meter-bg {
 	background-image: none;
-	animation: none;	
+	animation: none;
 }
 
 
