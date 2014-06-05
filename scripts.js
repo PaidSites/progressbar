@@ -15,7 +15,7 @@ ProgressBar.prototype.animate = function () {
   copy.text(self.before);
 
   var increaseProgress = setInterval(function () {
-    self.percent++;
+    self.percent = self.percent + 0.01;
 
     if (self.percent > 100) {
       progress.css('border-radius', '20px');
@@ -28,7 +28,7 @@ ProgressBar.prototype.animate = function () {
 
     progress.css('width', self.percent + '%');
 
-  }, (self.length / 90) * 1000);
+  }, (self.length / 9000) * 1000);
 };
 
 ProgressBar.prototype.beforeCopy = function () {
