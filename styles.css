@@ -138,7 +138,8 @@
   display: none;
 }
 
-.meter > span.no-meter-bg {
+.meter > span.no-meter-bg,
+.meter > span.no-meter-bg:after {
 	background-image: none;
 	animation: none;
 }
