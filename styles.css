@@ -142,6 +142,7 @@
 .meter > span.no-meter-bg:after {
 	background-image: none;
 	animation: none;
+  background-color: rgb(43,194,83);
 }
 
 
