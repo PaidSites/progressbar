@@ -22,6 +22,8 @@
   -webkit-box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
   -moz-box-shadow   : inset 0 -1px 1px rgba(255,255,255,0.3);
   box-shadow        : inset 0 -1px 1px rgba(255,255,255,0.3);
+
+  behavior: url(css3-pie/PIE.htc);
 }
 .meter > span {
   display: block;
@@ -166,7 +168,7 @@
   background-color: #f1a165;
   background-image: -moz-linear-gradient(top, #f1a165, #f36d0a);
   background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #f1a165),color-stop(1, #f36d0a));
-  background-image: -webkit-linear-gradient(#f1a165, #f36d0a); 
+  background-image: -webkit-linear-gradient(#f1a165, #f36d0a);
 }
 
 .red > span {
